@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "vite": "^7.0.6"
+  },
+  "dependencies": {
+    "@strapi/client": "^1.4.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
