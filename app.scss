@@ -1,0 +1,41 @@
+// Variables - Paleta de colores moderna
+$primary-bg: linear-gradient(135deg, #ffc4c4 0%, #fcfaff 100%);
+$secondary-bg: rgb(255, 255, 255);
+
+$border-color: rgba(77, 77, 77, 0.205);
+
+$text-primary: #000000;
+$text-secondary: #333232;
+
+$shadow-color: rgba(87, 87, 87, 0.911);
+
+$border-radius: 16px;
+$border-radius-small: 8px;
+
+$spacing-small: 8px;
+$spacing-medium: 16px;
+$spacing-large: 24px;
+$spacing-xlarge: 40px;
+
+// Transiciones
+$transition-fast: 0.2s ease;
+$transition-smooth: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+
+body{
+  background-color: $primary-bg;
+}
+
+ul{
+  list-style-type: none;
+  margin: $spacing-medium;
+}
+.container{
+  border: 1px solid $border-color;
+  border-radius: $border-radius;
+  display:flex;
+
+  li{
+    padding:$spacing-medium;
+  }
+}

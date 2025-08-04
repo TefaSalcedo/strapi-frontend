@@ -1,0 +1,83 @@
+.container-form {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.robot-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.form-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap:20px;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+.form-container{
+  display:flex;
+  flex-direction: column;
+}
+.form-spline {
+  background: rgba(252, 245, 245, 0.027);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 8px 32px 0 rgba(8, 8, 8, 0.37);
+  width: 100%;
+  max-width: 600px;
+  z-index: 3;
+}
+
+.form-spline label {
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-top: 15px;
+  color: rgba(255, 255, 255, 0.9);
+  display: block;
+}
+
+.form-spline input {
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-spline button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.form-spline button:hover {
+  background-color: #0056b3;
+}
+
