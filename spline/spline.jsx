@@ -7,7 +7,7 @@ const Spline = () => {
   return (
     <div className="container-form">
       <div className="robot-background">
-        {/* <Robot /> */}
+        <Robot />
       </div>
       <div className="form-overlay">
         <Form />

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app">
       {console.log("App component loaded")}
-      <Strapi />
+      {/* <Strapi /> */}
       <AppGsap />
       <Spline />
     </div>
