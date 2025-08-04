@@ -1,0 +1,114 @@
+// Variables
+$primary-color: #5161ce;
+$white: #fff;
+$text-light: rgba(255, 255, 255, 0.7);
+$border-radius: 15px;
+$transition-speed: 0.4s;
+$selector-height: 25px;
+
+// Navbar principal
+.navbar-mainbg {
+  background-color: $primary-color;
+  padding: 0;
+  position: relative;
+}
+
+// Logo
+.navbar-logo {
+  padding: 15px;
+  color: $white;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+// Navegación
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.nav-item {
+  position: relative;
+
+  &.active .nav-link {
+    color: $primary-color
+  }
+}
+
+.nav-link {
+  display: block;
+  padding: 20px 30px;
+  color: $text-light;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $white;
+  }
+}
+
+// Selector horizontal
+.hori-selector {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $white;
+  color: $primary-color;
+  border-top-left-radius: $border-radius;
+  border-top-right-radius: $border-radius;
+  z-index: 0;
+  transition: all $transition-speed ease;
+
+  .left,
+  .right {
+    position: absolute;
+    width: $selector-height;
+    height: $selector-height;
+    background-color: $white;
+    color: $primary-color;
+    bottom: 10px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $primary-color;
+      bottom: 0;
+    }
+  }
+
+  .left {
+    left: -$selector-height;
+
+    &::before {
+      left: -$selector-height;
+    }
+  }
+
+  .right {
+    right: -$selector-height;
+
+    &::before {
+      right: -$selector-height;
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .nav-link {
+    padding: 15px 20px;
+    font-size: 14px;
+  }
+
+  .navbar-logo {
+    font-size: 18px;
+    padding: 10px 15px;
+  }
+}
