@@ -25,8 +25,6 @@ function App() {
         <Spline />
       </div>
 
-      
-
     </div>
   );
 }

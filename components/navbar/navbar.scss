@@ -1,5 +1,5 @@
 // Variables
-$primary-color: #5161ce;
+$primary-color: #912be4;
 $white: #fff;
 $text-light: rgba(255, 255, 255, 0.7);
 $border-radius: 15px;
@@ -11,6 +11,10 @@ $selector-height: 25px;
   background-color: $primary-color;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 70px;
 }
 
 // Logo
@@ -28,8 +32,21 @@ $selector-height: 25px;
   margin: 0;
   padding: 0;
   position: relative;
+  justify-content: right;
 }
 
+.navbar-brand{
+  color: $white;
+  text-decoration: none;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+
+  img {
+    height: 40px;
+    width: auto;
+  }
+}
 .nav-item {
   position: relative;
 
@@ -44,7 +61,7 @@ $selector-height: 25px;
   color: $text-light;
   text-decoration: none;
   font-size: 16px;
-  transition: color 0.3s ease;
+  transition: color 0.2s ease;
 
   &:hover {
     color: $white;
@@ -70,7 +87,7 @@ $selector-height: 25px;
     height: $selector-height;
     background-color: $white;
     color: $primary-color;
-    bottom: 10px;
+    bottom: 0;
 
     &::before {
       content: '';
